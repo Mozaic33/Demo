@@ -1,0 +1,11 @@
+version: '3.7'
+
+services:
+  aspnetcoreA7:
+    image: demo
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: demonet   
+    ports:
+      - "63590:80"
