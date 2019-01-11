@@ -22,6 +22,10 @@ node {
         {
            sh "docker-compose up -d --remove-orphans"
         }
+        stage ('remove untagged images')
+	{
+	   sh "	docker rmi $(docker images -a | grep "^<none>" | awk '{print $3}')"
+	}
         
 }
 }
