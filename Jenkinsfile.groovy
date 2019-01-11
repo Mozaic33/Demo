@@ -24,7 +24,7 @@ node {
         }
         stage ('remove untagged images')
 	{
-	   sh "	docker rmi $(docker images -a | grep "^<none>" | awk '{print $3}')"
+	   sh '''docker rmi $(docker images -a | grep "^<none>" | awk '{print $3}')'''
 	}
         
 }
