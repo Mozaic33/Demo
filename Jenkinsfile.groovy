@@ -9,6 +9,8 @@ node {
               branch: 'master',
               credentialsId: 'git',
               url: 'git@github.com:Mozaic33/Demo.git'
+			  
+	      sh "git pull"
         }
     
         stage ('docker build')
