@@ -2,7 +2,7 @@ import jenkins.model.GlobalConfiguration
 
 node {
         label 'proiect'
-        ws("/var/lib/jenkins/jobs/DotNET/MyWorkspace"){
+        ws("/var/lib/jenkins/jobs/${env.JOB_NAME}/MyWorkspace"){
         
         stage ('Clone repo') {
           git name: 'Demo',
