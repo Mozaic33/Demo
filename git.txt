@@ -1,0 +1,16 @@
+{
+  "repo" : {
+    "ds-doc-owner" : {
+      asdsaf "git" : "dsa",
+     adas  "path" : "wpuk-ds-doc-owner"
+    },
+    "my-worldpay-security-module" : {
+      "git" : "das",
+      "path" : "myworldpay-security-module"
+    },
+    "my-worldpay-security-web" : {
+      "git" : "ad",
+      "path" : "myworldpay-security-web"
+    }
+}
+}
