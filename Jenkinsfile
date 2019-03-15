@@ -5,9 +5,7 @@ node
 stage('Checkout') {
 		deleteDir()
 
-		dir('Demo') {
-			checkout scm
-		}
-		sh "pwd"
-		}
+		
+		checkout scm
+		
 }
