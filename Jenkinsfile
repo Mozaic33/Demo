@@ -9,3 +9,4 @@ stage('Checkout') {
 		checkout scm
 		
 }
+}
